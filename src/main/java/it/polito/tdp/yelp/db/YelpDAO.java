@@ -14,6 +14,8 @@ import it.polito.tdp.yelp.model.Business;
 
 public class YelpDAO {
 
+	//metodo per velocizzare la creazione dei business ed evitare di creare doppioni
+	//stiamo dando una "memoria condivisa" alla classe dao
 	public List<Business> readBusinesses(Map<String, Business> businessIdMap) {
 
 		Connection conn;
